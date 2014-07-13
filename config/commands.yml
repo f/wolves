@@ -1,0 +1,72 @@
+# Default Commands
+
+# Prefix of the command,
+# You should put prefix to run command.
+# e.g. !kill <nick>
+prefix: !
+
+# You can use these commands everytime when the bot is on channel
+everytime:
+  rules: rules
+  simple: simple
+  away: away, brb, afk
+  back: back
+  stats: stats, st
+  pstats: pstats, ps
+  gstats: gstats, gs
+  in: in
+  out: out
+
+# You cannot use these commands after the game is started
+before:
+  join: join, j
+  start: start, s
+  wait: wait, w
+  ping: ping, hey
+
+# You can use these commands during the game
+during:
+  # Everyone can use these commands during the game
+  everyone:
+    coin: coin, heads, tails
+    vote: lynch, vote, v
+    retract: retract, r
+    votes: votes, vs
+    myrole: myrole, mr
+    leave: leave, quit, q
+    goat: goat
+
+  # Just the wolves can use these commands
+  wolf:
+    kill: kill, eat
+
+  # Just the seer can use these commands
+  seer:
+    see: see, what
+
+  # Just the harlot can use these commands
+  harlot:
+    visit: visit, sleep, stay
+
+  # Just the guard can use these commands
+  angel:
+    protect: protect, guard, save
+
+  # Just the detective can use these commands
+  detective:
+    id: id, find, who
+
+  # Just the werecrow can use these commands
+  werecrow:
+    observe: observe, watch, follow
+    kill: kill, peck
+
+  # Just the gunner can use these commands
+  gunner:
+    shoot: shoot, bang
+
+# For administration
+admin:
+  kick: kick, out
+  night: night
+  day: day

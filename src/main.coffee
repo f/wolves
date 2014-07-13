@@ -1,0 +1,1 @@
+ChannelListener = require 'channel-listener'

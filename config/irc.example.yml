@@ -1,0 +1,23 @@
+# IRC Connection Config
+
+# Channel to connect
+channel: "#wolfgamechannel"
+
+# Authentication details
+auth:
+  username: yourusername
+  password: password
+
+# Connection details
+connection:
+  host: irc.freenode.net
+  port: 6667
+
+# Owners and Admins
+owners:
+  - user1
+  - user2
+
+admins:
+  - user1
+  - user2
