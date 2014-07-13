@@ -7,12 +7,19 @@ module.exports = (grunt)->
       options:
         format: 'jed'
 
-    all:
-      src: ['i18n/gettext/**/*.po'],
-      dest: '.build/i18n/'
+      all:
+        src: ['i18n/gettext/**/*.po'],
+        dest: '.build/i18n/'
 
-  grunt.registerTask 'test', ->
-    console.log 2
+    jasmine_node:
+      options:
+        projectRoot: 'src'
+        extensions: 'coffee'
+        coffee: yes
+      all: ['spec/']
+
+
+  grunt.registerTask 'test', ['jasmine_node']
 
   grunt.registerTask 'servebot', ->
     console.log 3

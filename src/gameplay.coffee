@@ -1,4 +1,1 @@
-class GamePlay
-
-    constructor: ->
-      @on "join"
+class Gameplay
