@@ -1,4 +1,4 @@
-class Traitor extends Villager
+class Werewolf.Village.Traitor extends Werewolf.Village.Villager
 
   @appear: (players)-> switch on
     when players in [8..20] then 1

@@ -1,4 +1,6 @@
-class Cursed extends Villager
+{Seer, Detective} = Werewolf.Village
+
+class Werewolf.Village.Cursed extends Werewolf.Village.Villager
 
   @appear: (players)-> switch on
     when players in [4..17] then 1

@@ -1,5 +1,14 @@
-module.exports = class Gameplay
+{Village: {Villager}} = Werewolf
 
-  players: []
+class Werewolf.VillageCenter
 
-  addPlayer: (player)-> @players.push player
+  villagers: []
+
+  addVillager: (villager)-> @villagers.push villager
+
+  assignRoles: (roles=[])->
+    @villagers.map (villager)->
+      new Villager player
+
+  generateRoles: ->
+    

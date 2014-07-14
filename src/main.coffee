@@ -1,1 +1,1 @@
-ChannelListener = require 'channel-listener'
+Werewolf = {Roles: {}}

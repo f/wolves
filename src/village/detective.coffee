@@ -1,4 +1,4 @@
-class Detective extends Villager
+class Werewolf.Village.Detective extends Werewolf.Village.Villager
 
   can: (time)->
     super time, if time is 'day' then ['id']
@@ -6,4 +6,4 @@ class Detective extends Villager
   appear: (players)-> switch on
     when players in [12..20] then 1
 
-  id: (someone)->
+  id: (someone)-> @announce 'id', someone

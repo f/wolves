@@ -1,4 +1,4 @@
-class Wolf extends Villager
+class Werewolf.Village.Wolf extends Werewolf.Village.Villager
 
   @appear: (players)-> switch on
     when players in [4..10] then 1

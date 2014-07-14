@@ -1,4 +1,4 @@
-class Harlot extends Villager
+class Werewolf.Village.Harlot extends Werewolf.Village.Villager
 
   @appear: (players)-> switch on
     when players in [8..20] then 1
