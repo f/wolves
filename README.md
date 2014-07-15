@@ -1,6 +1,6 @@
 ![Ayazağa](./.assets/images/logo-small.png)
 
-THIS PROJECT IS UNDER HARDLY DEVELOPMENT
+**THIS PROJECT IS UNDER HARDLY DEVELOPMENT**
 ***
 
 Inspired from [lykoss/lykos][1], a Werewolf party game based on IRC Protocol
