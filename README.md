@@ -1,4 +1,5 @@
-lykos.js
-========
+# Ayazağa
 
-JavaScript port of lykoss/lykos, a Werewolf party game IRC bot
+Inspired from [lykoss/lykos][1], a Werewolf party game based on IRC Protocol
+
+[1]: http://github.com/lykoss/lykos

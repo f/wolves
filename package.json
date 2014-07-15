@@ -1,5 +1,5 @@
 {
-  "name": "nodewolf",
+  "name": "ayazaga",
   "version": "0.0.1",
   "description": "JavaScript port of lykoss/lykos, a Werewolf party game IRC bot",
   "main": "index.js",
@@ -30,7 +30,7 @@
   "author": "f",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/f/lykos.js/issues"
+    "url": "https://github.com/f/ayazaga/issues"
   },
-  "homepage": "https://github.com/f/lykos.js"
+  "homepage": "https://github.com/f/ayazaga"
 }
