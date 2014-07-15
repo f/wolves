@@ -36,7 +36,7 @@ grunt start
 You can change connection file:
 
 ```bash
-grunt start --run
+grunt start --config=config/another-config.yml
 ```
 
 ## Name
