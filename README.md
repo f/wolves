@@ -5,8 +5,6 @@
 
 Inspired from [lykoss/lykos][1], a Werewolf party game based on IRC Protocol
 
-[1]: http://github.com/lykoss/lykos
-
 ## Configuration
 
 You should create the IRC settings file at `config/irc.yml`
@@ -41,10 +39,11 @@ grunt start --config=config/another-config.yml
 
 ## Name
 
-[Ayazağa][1] is a village in Istanbul, Turkey which is famous for wolves and
+[Ayazağa][2] is a village in Istanbul, Turkey which is famous for wolves and
 killer software projects.
 
 ## License
 MIT
 
-[1]: http://tr.wikipedia.org/wiki/Ayaza%C4%9Fa,_Sar%C4%B1yer
+[1]: http://github.com/lykoss/lykos
+[2]: http://tr.wikipedia.org/wiki/Ayaza%C4%9Fa,_Sar%C4%B1yer
