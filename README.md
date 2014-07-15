@@ -48,7 +48,5 @@ MIT
 ![Werewolf](./.assets/images/werewolf.jpg)
 *Found this image from Google Search*
 
-Source: [from Google Images][3]
-
 [1]: http://github.com/lykoss/lykos
 [2]: http://tr.wikipedia.org/wiki/Ayaza%C4%9Fa,_Sar%C4%B1yer
