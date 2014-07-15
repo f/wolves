@@ -45,8 +45,10 @@ killer software projects.
 ## License
 MIT
 
+<!--
 ![Werewolf](./.assets/images/werewolf.jpg)
 *Found this image from Google Search*
+-->
 
 [1]: http://github.com/lykoss/lykos
 [2]: http://tr.wikipedia.org/wiki/Ayaza%C4%9Fa,_Sar%C4%B1yer
