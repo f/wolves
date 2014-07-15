@@ -1,14 +1,16 @@
 {Village: {Villager}} = Werewolf
 
-class Werewolf.VillageCenter
+class Werewolf.Square
 
   villagers: []
 
   addVillager: (villager)-> @villagers.push villager
 
-  assignRoles: (roles=[])->
+  createVillagers: (roles=[])->
     @villagers.map (villager)->
       new Villager player
 
-  generateRoles: ->
-    
+  generateVillagers: ->
+    console.log Village
+
+module.exports = Werewolf

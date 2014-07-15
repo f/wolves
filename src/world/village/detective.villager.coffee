@@ -1,9 +1,9 @@
 class Werewolf.Village.Detective extends Werewolf.Village.Villager
 
+  @population: (players)-> switch on
+    when players in [12..20] then 1
+
   can: (time)->
     super time, if time is 'day' then ['id']
-
-  appear: (players)-> switch on
-    when players in [12..20] then 1
 
   id: (someone)-> @announce 'id', someone

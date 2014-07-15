@@ -1,10 +1,6 @@
 class Werewolf.Village.Angel extends Werewolf.Village.Villager
 
-  constructor: ->
-    super
-    @delegateEvents()
-
-  @appear: (players)-> switch on
+  @population: (players)-> switch on
     when players in [17..20] then 1
 
   can: (time)->

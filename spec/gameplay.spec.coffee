@@ -1,21 +1,20 @@
-Gameplay = require '../src/gameplay'
+Werewolf = require '../lykos'
 
 describe 'Gameplay basic algorithms', ->
 
   game = null
 
-  beforeEach -> game = new Gameplay
-  afterEach -> game = null
+  beforeEach -> game = new Werewolf.VillageSquare
 
   it 'adds players to the game', ->
-    game.addPlayer 'player1'
-    expect(game.players.length).toBe 1
+    game.addVillager 'player1'
+    expect(game.villagers.length).toBe 1
 
-    game.addPlayer 'player2'
-    expect(game.players.length).toBe 2
+    game.addVillager 'player2'
+    expect(game.villagers.length).toBe 2
 
   it 'adds random roles to the players', ->
-    game.addPlayer 'player1'
-    game.addPlayer 'player2'
-    game.addPlayer 'player3'
-    game.addPlayer 'player4'
+    game.addVillager 'player1'
+    game.addVillager 'player2'
+    game.addVillager 'player3'
+    game.addVillager 'player4'

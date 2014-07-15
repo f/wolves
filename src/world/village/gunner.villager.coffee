@@ -1,6 +1,6 @@
 class Werewolf.Village.Gunner extends Werewolf.Village.Villager
 
-  @appear: (players)-> switch on
+  @population: (players)-> switch on
     when players in [10..20] then 1
 
   can: (time)->
