@@ -1,8 +1,9 @@
 ![Ayazağa](./assets/images/logo-small.png)
+
 IRC based online Werewolf (a [Mafia][3] theme) game
 
 ***
-**THIS PROJECT IS UNDER HARDLY DEVELOPMENT**
+**THIS PROJECT IS UNDER HEAVY DEVELOPMENT**
 ***
 
 ## Installation
