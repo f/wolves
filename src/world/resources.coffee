@@ -5,12 +5,8 @@ Werewolf = {Village: {}, Utils: {}}
   'os'
   'path'
   'events'
-  ###
-
-  You should use
-  {fs, os} = Werewolf.Utils
-
-  ###
+  # You should use
+  # {fs, os} = Werewolf.Utils
 ].forEach (module)->
   Werewolf.Utils[module] = require module
 
