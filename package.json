@@ -1,10 +1,11 @@
 {
   "name": "ayazaga",
-  "version": "0.0.1",
+  "version": "0.0.01",
   "description": "JavaScript port of lykoss/lykos, a Werewolf party game IRC bot",
   "main": "index.js",
   "bin": {
-    "ayazaga": "./bin/ayazaga.js"
+    "ayazaga": "./bin/ayazaga.js",
+    "ayz": "./bin/ayazaga.js"
   },
   "dependencies": {
     "coffee-script": "^1.7.1",

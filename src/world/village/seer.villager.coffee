@@ -1,4 +1,6 @@
-class Werewolf.Village.Seer extends Werewolf.Village.Villager
+{Villager} = Werewolf.Village
+
+class Werewolf.Village.Seer extends Villager
 
   @population: (players)-> switch on
     when players in [4..20] then 1

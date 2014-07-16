@@ -1,4 +1,4 @@
-{events: {EventEmitter}, wait, repeat, stop} = Werewolf.Utils
+{events: {EventEmitter}, duration, wait, repeat, stop} = Werewolf.Utils
 
 class Werewolf.World extends EventEmitter
 

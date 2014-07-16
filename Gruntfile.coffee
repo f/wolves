@@ -9,7 +9,7 @@ module.exports = (grunt)->
 
       all:
         src: ['i18n/gettext/**/*.po'],
-        dest: '.build/i18n/'
+        dest: 'dist/i18n/'
 
     jasmine_node:
       options:
@@ -20,11 +20,12 @@ module.exports = (grunt)->
       all: ['spec/']
 
     coffee:
-      all:
+      world:
         options:
+          join: yes
           bare: yes
         files:
-          '.build/main.js': [
+          'dist/main.js': [
             'src/world/resources.coffee'
             'src/world/world.coffee'
             'src/world/human.coffee'
@@ -32,9 +33,16 @@ module.exports = (grunt)->
             'src/world/village/villager.coffee'
             'src/world/village/*.villager.coffee'
             'src/world/square.coffee'
+          ],
+      server:
+        files:
+          'dist/server.js': [
+            'src/server.coffee'
           ]
 
-    uglify: all: files: '.build/main.js': '.build/main.js'
+    uglify:
+      world: files: 'dist/main.js': 'dist/main.js'
+      server: files: 'dist/server.js': 'dist/server.js'
 
   grunt.registerTask 'build', ['coffee', 'uglify']
 

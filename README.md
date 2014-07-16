@@ -1,4 +1,4 @@
-![Ayazağa](./.assets/images/logo-small.png)
+![Ayazağa](./assets/images/logo-small.png)
 IRC based online Werewolf (a [Mafia][3] theme) game
 
 ***
