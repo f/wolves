@@ -1,2 +1,2 @@
-module.exports = (action='', params...)->
-  console.log "Running #{action}"
+module.exports = (action='default', args)->
+  console.log action, args
