@@ -36,13 +36,13 @@ admins: [user1, user2]
 Then, you can connect to server and start the game:
 
 ```bash
-ayazaga start
+ayz start
 ```
 
 You can change connection file:
 
 ```bash
-ayazaga start --config=config/another-config.yml
+ayz start --config=config/another-config.yml
 ```
 
 ## Game and Name

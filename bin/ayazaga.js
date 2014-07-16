@@ -2,4 +2,4 @@
 process.title = 'ayazaga'
 var werewolf = require('../dist/main');
 var server = require('../dist/server');
-server(werewolf);
+server.apply(werewolf, process.argv.slice(2));
