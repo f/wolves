@@ -1,14 +1,16 @@
 Werewolf = {Village: {}, Utils: {}}
 
-[
-  'fs'
-  'os'
-  'path'
-  'events'
-  # You should use
-  # {fs, os} = Werewolf.Utils
-].forEach (module)->
-  Werewolf.Utils[module] = require module
+fs             = require 'fs'
+os             = require 'os'
+yml            = require 'js-yaml'
+{EventEmitter} = require 'events'
+_              = require 'underscore'
+_.templateSettings = interpolate: /\{\{(.+?)\}\}/g
+
+yaml           = (file)-> yml.safeLoad fs.readFileSync file
+
+config = yaml 'config/config.yml'
+translations = require "../dist/i18n/#{config.locale.default}.json"
 
 Werewolf.Utils.duration = (duration='1s', base=0) ->
 
@@ -36,3 +38,9 @@ Werewolf.Utils.cancel = (timer)->
 
 Werewolf.Utils.stop = (timer)->
   clearInterval timer
+
+Number::plural = (singular, plural='')->
+  (if @valueOf() is 1 then singular else plural).replace /%d/g, @valueOf()
+
+Werewolf.Utils.translate = (text, params)->
+  _.template translations[text]?[1] or text, params

@@ -1,12 +1,12 @@
-{events: {EventEmitter}, duration, wait, repeat, stop} = Werewolf.Utils
+{duration, wait, repeat, stop} = Werewolf.Utils
 
 class Werewolf.World extends EventEmitter
 
   day:
     length: duration '10m'  # How long a day will be
-    morning: '06:00'        # People wake up
-    evening: '19:00'        # People start voting
-    night:   '01:00'        # Wolves appear
+    morning: '6am'        # People wake up
+    evening: '7pm'        # People start voting
+    night:   '1am'        # Wolves appear
 
   # world.sun 'rise'
   event: (fact, action)-> @emit 'fact', action

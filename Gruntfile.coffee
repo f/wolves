@@ -1,15 +1,47 @@
+yml = require 'js-yaml'
+fs  = require 'fs'
+config = yml.load fs.readFileSync './config/config.yml'
+
 module.exports = (grunt)->
 
   require('load-grunt-tasks') grunt
 
   grunt.initConfig
+
+    xgettext:
+      options:
+        functionName: 'translate'
+        potFile: 'i18n/messages.pot'
+      target:
+        files:
+          javascript: ['dist/**/*.js']
+
     po2json:
       options:
-        format: 'jed'
+        format: 'raw'
+        stringOnly: yes
 
       all:
-        src: ['i18n/gettext/**/*.po'],
+        src: ['i18n/translations/**/*.po'],
         dest: 'dist/i18n/'
+
+    shell:
+      msgmerge:
+        command: config.locale.languages.map((locale)->
+          po = "i18n/translations/#{locale}.po"
+          """
+          if [ -f "#{po}" ]; then
+            echo "Updating #{po}"
+            msgmerge #{po} i18n/messages.pot > #{po}.tmp
+            exitCode=$?
+            if [ $exitCode -ne 0 ]; then
+              echo "Msgmerge failed with exit code $?"
+              exit $exitCode
+            fi
+            mv #{po}.tmp #{po}
+          fi
+
+          """).join ''
 
     jasmine_node:
       options:
@@ -44,7 +76,8 @@ module.exports = (grunt)->
       world: files: 'dist/main.js': 'dist/main.js'
       server: files: 'dist/server.js': 'dist/server.js'
 
-  grunt.registerTask 'build', ['coffee', 'uglify']
+  grunt.registerTask 'i18n', ['xgettext', 'shell:msgmerge', 'po2json']
+  grunt.registerTask 'build', ['coffee', 'i18n', 'uglify']
 
   grunt.registerTask 'test', ['jasmine_node']
 

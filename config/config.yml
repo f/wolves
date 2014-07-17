@@ -1,0 +1,7 @@
+# General config
+
+locale:
+  languages:
+    - en_US
+    - tr_TR
+  default: tr_TR

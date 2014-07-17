@@ -1,4 +1,5 @@
 {Villager} = Werewolf.Village
+{translate} = Werewolf.Utils
 
 class Werewolf.Village.Angel extends Villager
 
@@ -11,5 +12,5 @@ class Werewolf.Village.Angel extends Villager
   protect: (someone)-> @announce 'protect', someone
 
   messages: (event)-> switch event
-    when 'dead by wolf' then @_ '{name}, the angel is killed by a wolf'
-    when 'dead by people' then @_ '{name}, the angel is killed by the people'
+    when 'dead by wolf' then translate('{{name}}, the angel is killed by the wolf', name: @username)
+    when 'dead by people' then translate('{{name}}, the angel is killed by the people', name: @username)
