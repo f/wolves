@@ -1,1 +1,1 @@
-(function(){module.exports=function(a,b){return null==a&&(a="default"),console.log(a,b)}}).call(this);
+(function(){var a;a=require("irc").Client,module.exports=function(b){var c,d;return null==b&&(b="default"),d=require("../config/irc.yml"),console.log(d),c=new a("irc.freenode.net","ayazagamuhtari",{channels:["#ayazaga-dev"]}),c.addListener("message",function(a,b,c,d){var e;return e=d.user,console.log(arguments)}),c.addListener("connect",function(){return c.send("MODE","#ayazaga-dev","+o","ayazagamuhtari")})}}).call(this);

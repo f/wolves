@@ -1,1 +1,1 @@
-{"There {{wolf.plural('is %d wolf', 'are %d wolves')}} here.":[null,"Burada {{wolf.plural('kurt', 'kurtlar')}} var."]}
+{}

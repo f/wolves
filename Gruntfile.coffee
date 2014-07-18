@@ -58,6 +58,7 @@ module.exports = (grunt)->
           bare: yes
         files:
           'dist/main.js': [
+            'src/main.coffee'
             'src/world/resources.coffee'
             'src/world/world.coffee'
             'src/world/human.coffee'
