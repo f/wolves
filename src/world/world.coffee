@@ -4,9 +4,9 @@ class Werewolf.World extends EventEmitter
 
   day:
     length: duration '10m'  # How long a day will be
-    morning: '6am'        # People wake up
-    evening: '7pm'        # People start voting
-    night:   '1am'        # Wolves appear
+    morning: time '6am'        # People wake up
+    evening: time '7pm'        # People start voting
+    night:   time '1am'        # Wolves appear
 
   # world.sun 'rise'
   event: (fact, action)-> @emit 'fact', action
@@ -14,9 +14,16 @@ class Werewolf.World extends EventEmitter
   sun: (event)->
     @event 'sun', event
 
-  moment: ->
-    console.log 1
+  day: -> @sun 'rise'
+  night: -> @sun 'set'
+
+  minute: ->
+    # Pass a minute
+    @currentTime.setTime @currentTime.getTime() + 60*1000
 
   constructor: ->
-    time = repeat @moment, 1000, this
+    [hours, mins] = @day.night
+    @currentTime = new Date 0, 0, 0, hours, mins, 0
+
+    time = repeat @minute, 1000, this
     wait @day.length, => stop time

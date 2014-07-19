@@ -1,6 +1,6 @@
-yml = require 'js-yaml'
+require('better-require') 'json yaml'
 fs  = require 'fs'
-config = yml.load fs.readFileSync './config/config.yml'
+config = require './config/config.yml'
 
 module.exports = (grunt)->
 
@@ -68,8 +68,13 @@ module.exports = (grunt)->
             'src/world/square.coffee'
           ],
       server:
+        options:
+          join: yes
+          bare: yes
         files:
           'dist/server.js': [
+            'src/main.coffee'
+            'src/bot.coffee'
             'src/server.coffee'
           ]
 

@@ -1,10 +1,12 @@
 require('better-require') 'json yaml'
 fs                 = require 'fs'
 os                 = require 'os'
-yml                = require 'js-yaml'
 {EventEmitter}     = require 'events'
 _                  = require 'underscore'
 _.templateSettings = interpolate: /\{\{(.+?)\}\}/g
+
+CONFIG             = require '../config/config.yml'
+CONFIG.IRC         = require '../config/irc.yml'
 
 # Monkey Patches
 Number::plural = (singular, plural='')->
@@ -28,6 +30,12 @@ Werewolf.Utils =
       base += units[unit] * value
 
     base * 1000
+
+  time: (format) ->
+    [_, hours, _, mins, ampm] = format.match /\d+([\.:]\d+)?(am|pm)/
+    hours = 12 + + hours if ampm is 'pm'
+    mins or= 0
+    [hours, +mins]
 
   wait: (time, fn, context)->
     setTimeout fn.bind(context), time

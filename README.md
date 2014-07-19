@@ -1,6 +1,6 @@
-![Ayazağa](./assets/images/logo-small.png)
+![Wolves](./assets/images/logo-small.png)
 
-IRC based online Werewolf (a [Mafia][3] theme) game
+IRC based online Werewolf (a [Mafia][2] theme) game
 
 ***
 **THIS PROJECT IS UNDER HEAVY DEVELOPMENT**
@@ -11,7 +11,7 @@ IRC based online Werewolf (a [Mafia][3] theme) game
 Simply install using NPM.
 
 ```bash
-npm install -g ayazaga
+npm install -g wolves
 ```
 
 ## Configuration
@@ -37,16 +37,16 @@ admins: [user1, user2]
 Then, you can connect to server and start the game:
 
 ```bash
-ayz start
+wolves start
 ```
 
 You can change connection file:
 
 ```bash
-ayz start --config=config/another-config.yml
+wolves start --config=config/another-config.yml
 ```
 
-## Game and Name
+## The Game
 
 Inspired from [lykoss/lykos][1], a Werewolf party game based on IRC Protocol,
 
@@ -61,9 +61,6 @@ From Wikipedia:
 > eliminate a suspect. Play continues until all of the mafia has been
 > eliminated, or until the mafia outnumbers the innocents.
 
-[Ayazağa][2] is a village in Istanbul, Turkey which is famous for wolves and
-killer software projects.
-
 ## License
 MIT
 
@@ -73,5 +70,4 @@ MIT
 -->
 
 [1]: http://github.com/lykoss/lykos
-[2]: http://tr.wikipedia.org/wiki/Ayaza%C4%9Fa,_Sar%C4%B1yer
-[3]: http://en.wikipedia.org/wiki/Mafia_(party_game)
+[2]: http://en.wikipedia.org/wiki/Mafia_(party_game)

@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-process.title = 'ayazaga'
+process.title = 'wolves';
 var werewolf = require('../dist/main');
 var server = require('../dist/server');
 var argv = require('optimist').argv;

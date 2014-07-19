@@ -1,17 +1,25 @@
 # IRC Connection Config
 
 # Channel to connect
-channel: "#wolfgamechannel"
+channel: "#wolves-test"
+nickname: 'wolvesmuhtari'
 
 # Authentication details
 auth:
   username: yourusername
   password: password
+  hostname: internet
+  mode: +iw
+  realname: Kurt Adam Botu
 
 # Connection details
 connection:
   host: irc.freenode.net
   port: 6667
+  ssl: false
+
+flood-protection: false
+log: all
 
 # Owners and Admins
 owners:
