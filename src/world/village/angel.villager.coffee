@@ -1,5 +1,5 @@
 {Villager} = Wolves.Village
-{translate} = Wolves.Utils
+{translate} = utils
 
 class Wolves.Village.Angel extends Villager
 

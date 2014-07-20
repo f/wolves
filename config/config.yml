@@ -5,3 +5,5 @@ locale:
     - en
     - tr
   default: tr
+
+commandPrefix: "!"

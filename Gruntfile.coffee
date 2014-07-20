@@ -46,21 +46,20 @@ module.exports = (grunt)->
         purgeLocales: yes
         csvKeyLabel: 'Original'
         csvExtraFields: []
-        localeTemplate: 'src/locale/plurals.js'
 
       update:
         src: ['dist/**/*.js']
         dest: 'dist/locales/{locale}/i18n.json'
       import:
-        src: 'dist/locales/**/i18n.csv'
+        src: 'locales/**/*.csv'
         dest: 'dist/locales/{locale}/i18n.json'
       export:
         src: 'dist/locales/**/i18n.json'
-        dest: 'dist/locales/{locale}/i18n.csv'
+        dest: 'locales/{locale}.csv'
 
     uglify:
-      world: files: 'dist/main.js': 'dist/main.js'
-      server: files: 'dist/server.js': 'dist/server.js'
+      world: files: 'dist/main.js': ['dist/main.js']
+      server: files: 'dist/server.js': ['dist/server.js']
 
   # Task Registrations
   grunt.registerTask 'build', ['coffee', 'locales:import', 'locales', 'uglify']

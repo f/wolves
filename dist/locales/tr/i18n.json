@@ -1,6 +1,6 @@
 {
   "Killed by {count, plural, one{a wolf} other{wolves}}": {
-    "value": "{count, plural, one{Bir kurt} other{Kurtlar}} tarafından öldürüldü.",
+    "value": "{count, plural, one{Kurt} other{Kurtlar}} tarafından öldürüldü",
     "files": [
       "dist/server.js"
     ]
@@ -9,6 +9,18 @@
     "value": "Killed by {count, plural, one{wolf} other{wolves}}",
     "files": [
       "dist/main.js"
+    ]
+  },
+  "{name} oyuna katıldı. Şu an oyunda {count} kişi var.": {
+    "value": "{name} oyuna katıldı. Şu an oyunda {count} kişi var.",
+    "files": [
+      "dist/server.js"
+    ]
+  },
+  "{name} yeni bir oyun isteği gönderdi. Oyuncuları davet etmek için \"!ping\" komutunu kullanın": {
+    "value": "{name} yeni bir oyun isteği gönderdi. Oyuncuları davet etmek için \"!ping\" komutunu kullanın",
+    "files": [
+      "dist/server.js"
     ]
   },
   "{name}, the angel is killed by the people": {
