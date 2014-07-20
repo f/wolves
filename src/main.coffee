@@ -2,8 +2,7 @@ require('better-require') 'json yaml'
 fs                 = require 'fs'
 os                 = require 'os'
 {EventEmitter}     = require 'events'
-_                  = require 'underscore'
-_.templateSettings = interpolate: /\{\{(.+?)\}\}/g
+MessageFormat      = require 'grunt-locales/node_modules/messageformat'
 
 CONFIG             = require '../config/config.yml'
 CONFIG.IRC         = require '../config/irc.yml'
@@ -49,7 +48,12 @@ Wolves.Utils =
   stop: (timer)->
     clearInterval timer
 
-  translations: (file)->
-    messages = require file
+  translations: (locale)->
+    messages = require "../dist/locales/#{locale}/i18n.json"
+    mf = new MessageFormat locale, require('../locale/plurals.js')[locale]
     (text, params={})->
-      _.template messages[text]?[1] or text, params
+      message = mf.compile messages[text]?.value or text
+      message params
+
+# Initialize translations
+translate = Wolves.Utils.translations CONFIG.locale.default

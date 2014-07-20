@@ -12,5 +12,5 @@ class Wolves.Village.Angel extends Villager
   protect: (someone)-> @announce 'protect', someone
 
   messages: (event)-> switch event
-    when 'dead by wolf' then translate('{{name}}, the angel is killed by the wolf', name: @username)
-    when 'dead by people' then translate('{{name}}, the angel is killed by the people', name: @username)
+    when 'dead by wolf' then translate('Killed by {count, plural, one{wolf} other{wolves}}', name: @username, count: 2)
+    when 'dead by people' then translate('{name}, the angel is killed by the people', name: @username)

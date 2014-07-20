@@ -1,0 +1,4 @@
+"Original","tr"
+"Killed by {count, plural, one{a wolf} other{wolves}}","{count, plural, one{Bir kurt} other{Kurtlar}} tarafından öldürüldü."
+"Killed by {count, plural, one{wolf} other{wolves}}","Killed by {count, plural, one{wolf} other{wolves}}"
+"{name}, the angel is killed by the people","{name}, the angel is killed by the people"

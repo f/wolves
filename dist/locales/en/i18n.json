@@ -1,0 +1,20 @@
+{
+  "Killed by {count, plural, one{a wolf} other{wolves}}": {
+    "value": "Killed by {count, plural, one{a wolf} other{wolves}}",
+    "files": [
+      "dist/server.js"
+    ]
+  },
+  "Killed by {count, plural, one{wolf} other{wolves}}": {
+    "value": "Killed by {count, plural, one{wolf} other{wolves}}",
+    "files": [
+      "dist/main.js"
+    ]
+  },
+  "{name}, the angel is killed by the people": {
+    "value": "{name}, the angel is killed by the people",
+    "files": [
+      "dist/main.js"
+    ]
+  }
+}

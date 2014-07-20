@@ -19,11 +19,8 @@
     "grunt-contrib-coffee": "^0.10.1",
     "grunt-contrib-concat": "^0.4.0",
     "grunt-contrib-uglify": "^0.5.0",
-    "grunt-gettext": "^0.1.1",
     "grunt-jasmine-node": "^0.2.1",
-    "grunt-po2json": "^0.2.0",
-    "grunt-shell": "^0.7.0",
-    "grunt-xgettext": "^0.2.0",
+    "grunt-locales": "^6.0.1",
     "load-grunt-tasks": "^0.6.0"
   },
   "scripts": {

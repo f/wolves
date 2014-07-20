@@ -1,4 +1,4 @@
-{duration, wait, repeat, stop} = Wolves.Utils
+{time, duration, wait, repeat, stop} = Wolves.Utils
 
 class Wolves.World extends EventEmitter
 

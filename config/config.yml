@@ -2,6 +2,6 @@
 
 locale:
   languages:
-    - en_US
-    - tr_TR
-  default: tr_TR
+    - en
+    - tr
+  default: tr
