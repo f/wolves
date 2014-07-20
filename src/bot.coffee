@@ -145,11 +145,11 @@ Wolves.Bot::loadExtensions = ->
       @debug e r
   @on 'self:start', ->
     version = @toString()
-    console.log "[#{sty.bold sty.green version}] I'm #{sty.bold sty.cyan 'loaded'}, ready to connect !"
+    console.log "[#{sty.bold sty.green version}] IRC Client #{sty.bold sty.cyan 'loaded'}, ready to connect."
   @on 'self:connected', (r) ->
-    console.log "I'm connected to #{sty.green sty.bold r.server}"
+    console.log "Connected to the server #{sty.green sty.bold r.server}"
   @on 'self:join', (r) ->
-    console.log "I've just joined #{sty.yellow r.channel}"
+    console.log "Joined #{sty.yellow r.channel}"
   @on 'self:talk', (r) ->
     console.log "[#{sty.bold sty.red r.channel}] #{sty.green r.text}"
   @on 'user:private', (r) ->
