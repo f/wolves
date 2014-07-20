@@ -1,6 +1,6 @@
-{Seer, Detective, Villager} = Werewolf.Village
+{Seer, Detective, Villager} = Wolves.Village
 
-class Werewolf.Village.Traitor extends Villager
+class Wolves.Village.Traitor extends Villager
 
   @population: (players)-> switch on
     when players in [8..20] then 1

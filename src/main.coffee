@@ -13,9 +13,9 @@ Number::plural = (singular, plural='')->
   (if @valueOf() is 1 then singular else plural).replace /%d/g, @valueOf()
 
 # Namespacing
-Werewolf = {Village: {}, Utils: {}}
+Wolves = {Village: {}, Utils: {}}
 
-Werewolf.Utils =
+Wolves.Utils =
   duration: (duration='1s', base=0) ->
 
     # You can add new units here

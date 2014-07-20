@@ -1,4 +1,4 @@
-class Werewolf.Human extends EventEmitter
+class Wolves.Human extends EventEmitter
 
   username: ''
 

@@ -1,6 +1,6 @@
-{duration, wait, repeat, stop} = Werewolf.Utils
+{duration, wait, repeat, stop} = Wolves.Utils
 
-class Werewolf.World extends EventEmitter
+class Wolves.World extends EventEmitter
 
   day:
     length: duration '10m'  # How long a day will be

@@ -1,6 +1,6 @@
-{Village: {Villager}} = Werewolf
+{Village: {Villager}} = Wolves
 
-class Werewolf.Square
+class Wolves.Square
 
   villagers: []
 
@@ -13,4 +13,4 @@ class Werewolf.Square
   generateVillagers: ->
     console.log Village
 
-module.exports = Werewolf
+module.exports = Wolves

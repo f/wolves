@@ -1,6 +1,6 @@
 ![Wolves](./assets/images/logo-small.png)
 
-IRC based online Werewolf (a [Mafia][2] theme) game
+IRC based online Wolves (a [Mafia][2] theme) game
 
 ***
 **THIS PROJECT IS UNDER HEAVY DEVELOPMENT**
@@ -48,10 +48,10 @@ wolves start --config=config/another-config.yml
 
 ## The Game
 
-Inspired from [lykoss/lykos][1], a Werewolf party game based on IRC Protocol,
+Inspired from [lykoss/lykos][1], a Wolves party game based on IRC Protocol,
 
 From Wikipedia:
-> **Mafia** (Russian: Ма́фия, also known as **Werewolf**) is a party game created
+> **Mafia** (Russian: Ма́фия, also known as **Wolves**) is a party game created
 > in the USSR by Dimitry Davidoff in 1986,[3] modelling a conflict between
 > an informed minority (the mafia) and an uninformed majority (the innocents).
 > At the start of the game each player is secretly assigned a role affiliated
@@ -65,7 +65,7 @@ From Wikipedia:
 MIT
 
 <!--
-![Werewolf](./.assets/images/werewolf.jpg)
+![Wolves](./.assets/images/Wolves.jpg)
 *Found this image from Google Search*
 -->
 

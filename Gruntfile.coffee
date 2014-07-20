@@ -9,18 +9,11 @@ module.exports = (grunt)->
   grunt.initConfig
 
     xgettext:
-      options:
-        functionName: 'translate'
-        potFile: 'i18n/messages.pot'
-      target:
-        files:
-          javascript: ['dist/**/*.js']
+      options: {functionName: 'translate', potFile: 'i18n/messages.pot'}
+      target: files: javascript: ['dist/**/*.js']
 
     po2json:
-      options:
-        format: 'raw'
-        stringOnly: yes
-
+      options: {format: 'raw', stringOnly: yes}
       all:
         src: ['i18n/translations/**/*.po'],
         dest: 'dist/i18n/'
@@ -53,9 +46,7 @@ module.exports = (grunt)->
 
     coffee:
       world:
-        options:
-          join: yes
-          bare: yes
+        options: {join: yes, bare: yes}
         files:
           'dist/main.js': [
             'src/main.coffee'
@@ -65,12 +56,11 @@ module.exports = (grunt)->
             'src/world/stranger.coffee'
             'src/world/village/villager.coffee'
             'src/world/village/*.villager.coffee'
+            'extensions/**/*.coffee'
             'src/world/square.coffee'
           ],
       server:
-        options:
-          join: yes
-          bare: yes
+        options: {join: yes, bare: yes}
         files:
           'dist/server.js': [
             'src/main.coffee'
@@ -82,12 +72,10 @@ module.exports = (grunt)->
       world: files: 'dist/main.js': 'dist/main.js'
       server: files: 'dist/server.js': 'dist/server.js'
 
+  # Task Registrations
   grunt.registerTask 'i18n', ['xgettext', 'shell:msgmerge', 'po2json']
   grunt.registerTask 'build', ['coffee', 'i18n', 'uglify']
 
   grunt.registerTask 'test', ['jasmine_node']
-
-  grunt.registerTask 'servebot', ->
-    console.log 3
 
   grunt.registerTask 'default', ['build']

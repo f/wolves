@@ -1,10 +1,10 @@
-Werewolf = require '../lykos'
+Wolves = require '../lykos'
 
 describe 'Gameplay basic algorithms', ->
 
   game = null
 
-  beforeEach -> game = new Werewolf.VillageSquare
+  beforeEach -> game = new Wolves.VillageSquare
 
   it 'adds players to the game', ->
     game.addVillager 'player1'

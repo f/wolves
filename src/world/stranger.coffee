@@ -1,7 +1,7 @@
 # Everyone is stranger until they are joined to the village.
-{Human} = Werewolf
+{Human} = Wolves
 
-class Werewolf.Stranger extends Human
+class Wolves.Stranger extends Human
 
   username: ''
 

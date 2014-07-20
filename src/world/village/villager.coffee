@@ -1,6 +1,6 @@
-{Stranger} = Werewolf
+{Stranger} = Wolves
 
-class Werewolf.Village.Villager extends Stranger
+class Wolves.Village.Villager extends Stranger
 
   can: (time, abilities=[])-> abilities.concat switch on
     when time is 'day' then ['vote', 'retract', 'goat']

@@ -1,7 +1,7 @@
-{Villager} = Werewolf.Village
-{translate} = Werewolf.Utils
+{Villager} = Wolves.Village
+{translate} = Wolves.Utils
 
-class Werewolf.Village.Angel extends Villager
+class Wolves.Village.Angel extends Villager
 
   @population: (players)-> switch on
     when players in [17..20] then 1
