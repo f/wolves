@@ -62,7 +62,7 @@ From Wikipedia:
 > eliminated, or until the mafia outnumbers the innocents.
 
 ## License
-MIT
+MIT: [http://f.mit-license.org](http://f.mit-license.org)
 
 <!--
 ![Wolves](./.assets/images/Wolves.jpg)
