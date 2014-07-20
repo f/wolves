@@ -1,8 +1,13 @@
+require.submodule = (module)->
+  [module, submodule] = module.split '/'
+  require module
+  require.cache[require.resolve(module)].require submodule
+
 require('better-require') 'json yaml'
 fs                 = require 'fs'
 os                 = require 'os'
 {EventEmitter}     = require 'events'
-MessageFormat      = require 'grunt-locales/node_modules/messageformat'
+MessageFormat      = require.submodule 'grunt-locales/messageformat'
 
 CONFIG             = require '../config/config.yml'
 CONFIG.IRC         = require '../config/irc.yml'
