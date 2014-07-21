@@ -1,6 +1,6 @@
 {
   "name": "wolves",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "JavaScript port of lykoss/lykos, a Wolves party game IRC bot",
   "main": "index.js",
   "bin": {
