@@ -2,6 +2,8 @@
 
 IRC based online Wolves (a [Mafia][2] theme) game
 
+[Progress](http://progressed.io/bar/10)
+
 ***
 **THIS PROJECT IS UNDER HEAVY DEVELOPMENT**
 ***
