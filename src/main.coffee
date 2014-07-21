@@ -4,7 +4,9 @@ os                 = require 'os'
 {EventEmitter}     = require 'events'
 MessageFormat      = require 'grunt-locales/node_modules/messageformat'
 
-BASE = '~/.wolves' if fs.existsSync '~/.wolves' else '../config'
+USER_CONFIG_PATH   = "#{process.env.HOME}/.wolves"
+
+BASE = if fs.existsSync USER_CONFIG_PATH then USER_CONFIG_PATH else '../config'
 CONFIG             = require BASE + '/config.yml'
 CONFIG.IRC         = require BASE + '/irc.yml'
 
