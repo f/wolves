@@ -14,6 +14,27 @@ Simply install using NPM.
 npm install -g wolves
 ```
 
+### Ubuntu
+
+```bash
+sudo apt-get install python-software-properties
+sudo add-apt-repository ppa:chris-lea/node.js
+sudo apt-get update
+sudo apt-get install nodejs
+npm install -g wolves
+```
+
+### Mac OS X
+
+```bash
+brew install node
+npm install -g wolves
+```
+
+### Windows
+
+I really don't know.
+
 ## Configuration
 
 You should create the IRC settings file at `config/irc.yml`
