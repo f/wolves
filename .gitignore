@@ -27,6 +27,4 @@ node_modules
 # Users Environment Variables
 .lock-wscript
 
-config/irc.yml
-
 .tmp

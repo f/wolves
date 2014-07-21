@@ -1,13 +1,14 @@
 # IRC Connection Config
 
 # Channel to connect
-channel: "#wolves-test"
-nickname: 'wolvesmuhtari'
+channel: "#mywolfychannel"
+nickname: 'mywolfbot'
+commander: '!'
 
 # Authentication details
 auth:
-  username: yourusername
-  password: password
+  username: mywolfbot
+  password:
   hostname: internet
   mode: +iw
   realname: Wolves Bot

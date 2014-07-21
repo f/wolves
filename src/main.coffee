@@ -4,8 +4,9 @@ os                 = require 'os'
 {EventEmitter}     = require 'events'
 MessageFormat      = require 'grunt-locales/node_modules/messageformat'
 
-CONFIG             = require '../config/config.yml'
-CONFIG.IRC         = require '../config/irc.yml'
+BASE = '~/.wolves' if fs.existsSync '~/.wolves' else '../config'
+CONFIG             = require BASE + '/config.yml'
+CONFIG.IRC         = require BASE + '/irc.yml'
 
 Wolves = {Village: {}}
 
