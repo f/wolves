@@ -46,6 +46,8 @@ module.exports = (grunt)->
         purgeLocales: yes
         csvKeyLabel: 'Original'
         csvExtraFields: []
+        messageFormatLocaleFile: "#{__dirname}/node_modules/messageformat/locale/{locale}.js"
+        messageFormatSharedFile: "#{__dirname}/node_modules/messageformat/lib/messageformat.include.js"
 
       update:
         src: ['dist/**/*.js']
