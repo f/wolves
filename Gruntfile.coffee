@@ -1,5 +1,9 @@
-require('better-require') 'json yaml'
 fs  = require 'fs'
+yml = require 'js-yaml'
+
+require.extensions['.yml'] = (module, filename)->
+  module.exports = yml.safeLoad fs.readFileSync filename
+
 config = require './config/config.yml'
 
 module.exports = (grunt)->
