@@ -1,8 +1,11 @@
-require('better-require') 'json yaml'
 fs                 = require 'fs'
 os                 = require 'os'
+yml                = require 'js-yaml'
 {EventEmitter}     = require 'events'
-MessageFormat      = require 'grunt-locales/node_modules/messageformat'
+MessageFormat      = require 'messageformat'
+
+require.extensions['.yml'] = (module, filename)->
+  module.exports = yml.safeLoad fs.readFileSync filename
 
 USER_CONFIG_PATH   = "#{process.env.HOME}/.wolves"
 
