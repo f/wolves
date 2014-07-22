@@ -3,6 +3,7 @@
 IRC based online Wolves (a [Mafia][2] theme) game
 
 ![Progress](http://progressed.io/bar/10)
+[![Build Status](https://travis-ci.org/f/wolves.svg?branch=master)](https://travis-ci.org/f/wolves)
 
 ***
 **THIS PROJECT IS UNDER HEAVY DEVELOPMENT**
